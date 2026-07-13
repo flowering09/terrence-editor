@@ -1,0 +1,3 @@
+[submodule "terrence-wii"]
+	path = terrence-wii
+	url = https://github.com/theresaway/terrence-wii.git
