@@ -1,0 +1,14 @@
+[remap]
+
+importer="terrence.tiaf"
+type="ArrayMesh"
+uid="uid://cms56yc3gnv21"
+path="res://.godot/imported/a.tiaf-4f48f1958dc6c3a99dd94fb35ab2c84f.res"
+
+[deps]
+
+source_file="res://test/a.tiaf"
+dest_files=["res://.godot/imported/a.tiaf-4f48f1958dc6c3a99dd94fb35ab2c84f.res"]
+
+[params]
+
