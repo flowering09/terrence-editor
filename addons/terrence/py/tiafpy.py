@@ -94,8 +94,6 @@ def write_header(path, name, frames, indices):
     with open(path, "w") as f:
 
         f.write("#pragma once\n\n")
-        f.write('#include "vertex.h"\n')
-        f.write('#include "meshanimation.h"\n\n')
 
 
         for i, frame in enumerate(frames):

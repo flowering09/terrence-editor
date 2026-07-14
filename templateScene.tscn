@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bj2w2fg7x36qr"]
+
+[ext_resource type="Script" uid="uid://dnmtvi3f5cxmj" path="res://addons/terrence/nodes/thing.gd" id="1_gcdhc"]
+[ext_resource type="Script" uid="uid://cl80cn0cd11d3" path="res://addons/terrence/nodes/thing3d.gd" id="2_pmppd"]
+[ext_resource type="Script" uid="uid://cn2ir5p1llpwu" path="res://addons/terrence/nodes/thing2d.gd" id="6_8uram"]
+
+[node name="Template" type="Node" unique_id=771661045]
+script = ExtResource("1_gcdhc")
+metadata/_custom_type_script = "uid://dnmtvi3f5cxmj"
+
+[node name="Root3D" type="Node3D" parent="." unique_id=1057737618]
+script = ExtResource("2_pmppd")
+metadata/_custom_type_script = "uid://cl80cn0cd11d3"
+
+[node name="Root2D" type="Node2D" parent="." unique_id=1979202543]
+script = ExtResource("6_8uram")
+metadata/_custom_type_script = "uid://cn2ir5p1llpwu"
+
+[node name="RootUI" type="Node2D" parent="." unique_id=645216448]
+script = ExtResource("6_8uram")
+metadata/_custom_type_script = "uid://cn2ir5p1llpwu"

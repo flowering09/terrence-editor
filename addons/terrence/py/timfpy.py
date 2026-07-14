@@ -71,7 +71,6 @@ def write_header(path, name, vertices, indices):
     with open(path, "w") as f:
 
         f.write("#pragma once\n\n")
-        f.write('#include "vertex.h"\n\n')
 
 
         f.write(
