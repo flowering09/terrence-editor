@@ -1,0 +1,14 @@
+[remap]
+
+importer="terrence.tiaf"
+type="ArrayMesh"
+uid="uid://d08huho2knqec"
+path="res://.godot/imported/koryfosi.tiaf-8f0fa9b0ecb8f5775e6ad6c5833897ed.res"
+
+[deps]
+
+source_file="res://test/koryfosi.tiaf"
+dest_files=["res://.godot/imported/koryfosi.tiaf-8f0fa9b0ecb8f5775e6ad6c5833897ed.res"]
+
+[params]
+

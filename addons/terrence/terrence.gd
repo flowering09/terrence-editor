@@ -426,6 +426,8 @@ func _build_all():
 	exported_scenes.clear()
 	
 	_export_all_scenes()
+	
+	_build_umbrella()
 
 	_write_scenes_header()
 	print("=== Done ===")
