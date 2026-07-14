@@ -156,11 +156,11 @@ func _build_and_run():
 	
 func _run():
 	var dol_path = ProjectSettings.globalize_path(
-		"res://terrence-wii/terrence-wii.dol"
+		"res://engine/engine.dol"
 	)
 
 	if not FileAccess.file_exists(
-		"res://terrence-wii/terrence-wii.dol"
+		"res://engine/engine.dol"
 	):
 		push_error("DOL not found: " + dol_path)
 		return
@@ -254,7 +254,7 @@ func _compile(path):
 		"res://addons/terrence/py/" + script
 	)
 
-	var output_path = "res://terrence-wii/source/game/%s.h" % path.get_file().get_basename()
+	var output_path = "res://engine/source/game/%s.h" % path.get_file().get_basename()
 
 	var output = []
 
@@ -330,7 +330,7 @@ func _write_scenes_header():
 
 
 	var file = FileAccess.open(
-		"res://terrence-wii/source/game/scenes.h",
+		"res://engine/source/game/scenes.h",
 		FileAccess.WRITE
 	)
 
@@ -444,7 +444,7 @@ func _build_base_umbrella():
 	var output = "#pragma once\n\n"
 
 	var dir = DirAccess.open(
-		"res://terrence-wii/source"
+		"res://engine/source"
 	)
 
 	if dir == null:
@@ -473,7 +473,7 @@ func _build_base_umbrella():
 
 
 	var f = FileAccess.open(
-		"res://terrence-wii/source/game/terrence_base.h",
+		"res://engine/source/game/terrence_base.h",
 		FileAccess.WRITE
 	)
 
@@ -484,7 +484,7 @@ func _build_umbrella():
 	var output = "#pragma once\n\n"
 	
 	var dir = DirAccess.open(
-		"res://terrence-wii/source"
+		"res://engine/source"
 	)
 
 	dir.list_dir_begin()
@@ -502,7 +502,7 @@ func _build_umbrella():
 	dir.list_dir_end()
 	
 	dir = DirAccess.open(
-		"res://terrence-wii/source/game/include"
+		"res://engine/source/game/include"
 	)
 
 	dir.list_dir_begin()
@@ -520,7 +520,7 @@ func _build_umbrella():
 	dir.list_dir_end()
 	
 	dir = DirAccess.open(
-		"res://terrence-wii/source/game"
+		"res://engine/source/game"
 	)
 
 	dir.list_dir_begin()
@@ -539,7 +539,7 @@ func _build_umbrella():
 
 	output += '#include "scenes.h"\n'
 	var f = FileAccess.open(
-		"res://terrence-wii/source/game/terrence.h",
+		"res://engine/source/game/terrence.h",
 		FileAccess.WRITE
 	)
 
@@ -615,7 +615,7 @@ func _write_thing_registrations():
 
 
 	var dir = DirAccess.open(
-    	"res://terrence-wii/source/game/include"
+    	"res://engine/source/game/include"
 	)
 
 	if dir == null:
@@ -650,7 +650,7 @@ func _write_thing_registrations():
 
 
 	var f = FileAccess.open(
-		"res://terrence-wii/source/game/thing_registrations.cpp",
+		"res://engine/source/game/thing_registrations.cpp",
 		FileAccess.WRITE
 	)
 
@@ -659,9 +659,9 @@ func _write_thing_registrations():
 func _clean_generated_main():
 
 	var files = [
-		"res://terrence-wii/source/game/include/Main.h",
-		"res://terrence-wii/source/game/src/Main.cpp",
-		"res://terrence-wii/source/game/src/_main_.cpp"
+		"res://engine/source/game/include/Main.h",
+		"res://engine/source/game/src/Main.cpp",
+		"res://engine/source/game/src/_main_.cpp"
 	]
 
 	for file in files:
@@ -758,7 +758,7 @@ func _msys_path(win_path:String):
 	
 func _build_wii():
 	
-	var win_path = ProjectSettings.globalize_path("res://terrence-wii")
+	var win_path = ProjectSettings.globalize_path("res://engine")
 	var msys_path = _msys_path(
 		win_path
 	)
@@ -800,8 +800,8 @@ func _build_all():
 	
 	_write_thing_registrations()
 	
-	fix_directory("res://terrence-wii/source/game/include")
-	fix_directory("res://terrence-wii/source/game/src", true)
+	fix_directory("res://engine/source/game/include")
+	fix_directory("res://engine/source/game/src", true)
 	
 	_build_wii()
 	

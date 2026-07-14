@@ -1,0 +1,13 @@
+{
+	"filesGenerated": [
+		"src/_main_.cpp",
+		"src/Main.cpp",
+		"src/Dingaling.cpp",
+		"include/_HaxeUtils.h",
+		"include/Main.h",
+		"include/Dingaling.h"
+	],
+	"id": 4,
+	"wasCached": false,
+	"version": 1
+}
