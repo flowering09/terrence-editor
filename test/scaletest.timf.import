@@ -1,0 +1,14 @@
+[remap]
+
+importer="terrence.timf"
+type="ArrayMesh"
+uid="uid://bult4y25t8cs0"
+path="res://.godot/imported/scaletest.timf-566200da047c329755e48b47f633d63f.res"
+
+[deps]
+
+source_file="res://test/scaletest.timf"
+dest_files=["res://.godot/imported/scaletest.timf-566200da047c329755e48b47f633d63f.res"]
+
+[params]
+
