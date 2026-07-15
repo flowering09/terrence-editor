@@ -12,7 +12,12 @@ This section assumes you are on Windows. I don't exactly know how to use Linux, 
 ```
 haxelib git reflaxe.cpp https://github.com/SomeRanDev/reflaxe.CPP
 ```
-7. Open the project in the Godot editor.
+7. Copy the [template project](https://github.com/theresaway/terrence-template?tab=readme-ov-file).
+8. Clone it into ``game``:
+```
+git clone (your repo) game
+```
+9. Open the project in the Godot editor.
 
 And you should be all good to go!
 
