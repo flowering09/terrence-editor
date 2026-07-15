@@ -1,6 +1,8 @@
 # The Mystical Magic Terrence 2 Editor
 This is a Godot 4.7 plugin that transforms the Godot editor into a fully featured editor for The Mystical Magic Terrence 2 and the accompanying Terrence Engine for Nintendo Wii.
 
+### The engine is currently in a heavy WIP state and not ready for public use. I've simply open sourced it... because I just felt like it lmao
+
 ## Setup
 This section assumes you are on Windows. I don't exactly know how to use Linux, so you're on your own there, pal.
 1. Download or clone this repository.
