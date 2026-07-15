@@ -59,13 +59,6 @@ func _enter_tree():
 		null
 	)
 	
-	add_custom_type(
-		"ScriptedThing",
-		"Node",
-		preload("res://addons/terrence/nodes/scriptedThing.gd"),
-		null
-	)
-	
 	scene_file_dialog = EditorFileDialog.new()
 
 	scene_file_dialog.file_mode = EditorFileDialog.FILE_MODE_SAVE_FILE
@@ -88,7 +81,6 @@ func _exit_tree():
 	remove_custom_type("Thing3D")
 	remove_custom_type("MeshRendererTE")
 	remove_custom_type("AnimatedMeshTE")
-	remove_custom_type("ScriptedThing")
 	
 	if terrence_button:
 		remove_control_from_container(
@@ -361,6 +353,8 @@ func _export_node(node, indent):
 		type,
 		type
 	]
+	
+	out += "%s%s->setVisible(%s);\n"%[indent, var_name, str(node.get("visible"))]
 
 
 	# Position

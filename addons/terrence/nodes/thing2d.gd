@@ -2,9 +2,10 @@
 extends Node2D
 class_name Thing2D
 
+@export var scrName = "Thing2D"
 
 func terrence_type():
-	return "Thing2D"
+	return scrName
 
 
 func export_data():
