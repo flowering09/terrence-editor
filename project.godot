@@ -12,6 +12,8 @@ config_version=5
 
 config/name="Terrence Editor"
 config/features=PackedStringArray("4.7", "Forward Plus")
+boot_splash/bg_color=Color(0.08625124, 0.07791843, 0.085076876, 1)
+boot_splash/image="uid://bqi0s1appm0ne"
 config/icon="res://icon.svg"
 
 [display]
