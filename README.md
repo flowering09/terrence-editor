@@ -1,6 +1,8 @@
 # The Mystical Magic Terrence 2 Editor
 This is a Godot 4.7 plugin that transforms the Godot editor into a fully featured editor for The Mystical Magic Terrence 2 and the accompanying Terrence Engine for Nintendo Wii.
 
+### The engine is currently in a heavy WIP state and not ready for public use. I've simply open sourced it... because I just felt like it lmao
+
 ## Setup
 This section assumes you are on Windows. I don't exactly know how to use Linux, so you're on your own there, pal.
 1. Download or clone this repository.
@@ -12,7 +14,12 @@ This section assumes you are on Windows. I don't exactly know how to use Linux, 
 ```
 haxelib git reflaxe.cpp https://github.com/SomeRanDev/reflaxe.CPP
 ```
-7. Open the project in the Godot editor.
+7. Copy the [template project](https://github.com/theresaway/terrence-template?tab=readme-ov-file).
+8. Clone it into ``game``:
+```
+git clone (your repo) game
+```
+9. Open the project in the Godot editor.
 
 And you should be all good to go!
 
