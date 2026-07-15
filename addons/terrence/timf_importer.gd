@@ -139,7 +139,7 @@ func _import(
 	arrays[Mesh.ARRAY_COLOR] = colors
 	arrays[Mesh.ARRAY_INDEX] = indices
 
-	var mesh = ArrayMesh.new()
+	var mesh = MeshTIMF.new()
 
 	mesh.add_surface_from_arrays(
 		Mesh.PRIMITIVE_TRIANGLES,

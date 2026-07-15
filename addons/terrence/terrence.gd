@@ -427,7 +427,7 @@ func _export_mesh_load(node, indent, var_name):
 		var_name,
 		indent,
 		var_name,
-		node.mesh.resource_path.get_file().get_basename(),
+		node.timf_mesh.resource_path.get_file().get_basename(),
 		indent,
 		var_name,
 		var_name
@@ -444,7 +444,7 @@ func _export_animation_load(node, indent, var_name):
 		var_name,
 		indent,
 		var_name,
-		node.mesh.resource_path.get_file().get_basename(),
+		node.tiaf_mesh.resource_path.get_file().get_basename(),
 		indent,
 		var_name,
 		var_name
