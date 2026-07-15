@@ -19,9 +19,16 @@ haxelib git reflaxe.cpp https://github.com/SomeRanDev/reflaxe.CPP
 ```
 git clone (your repo) game
 ```
-9. Open the project in the Godot editor.
+9. Run the following commands to get the actual engine code:
+```
+git submodule init
+```
+and
+```
+git submodule update
+```
 
-And you should be all good to go!
+And you should be all good to open the project!
 
 ## Building
 Building is relatively straightforward. See the Terrence menu in the top right for options.
