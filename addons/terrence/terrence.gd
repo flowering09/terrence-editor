@@ -366,6 +366,23 @@ func _export_node(node, indent):
 			node.position.y,
 			node.position.z
 		]
+		
+		out += "%s%s->setRotation(%ff, %ff, %ff);\n" % [
+			indent,
+			var_name,
+			rad_to_deg(node.rotation.x),
+			rad_to_deg(node.rotation.y),
+			rad_to_deg(node.rotation.z)
+		]
+		
+		out += "%s%s->setScale(%ff, %ff, %ff);\n" % [
+			indent,
+			var_name,
+			node.scale.x,
+			node.scale.y,
+			node.scale.z
+		]
+
 
 	elif node is Thing2D:
 		out += "%s%s->setPosition(%ff, %ff);\n" % [
